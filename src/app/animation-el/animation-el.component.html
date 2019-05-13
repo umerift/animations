@@ -1,0 +1,9 @@
+<button (click)="toggle()">toggle</button>
+
+<div class="container">
+  <button [@loadingAnim]="!isOpen ? 'circle' : 'button'" id="button" type="button" class="btn btn-primary">
+    <p *ngIf="isOpen">
+      {{text}}
+    </p>
+  </button>
+</div>
